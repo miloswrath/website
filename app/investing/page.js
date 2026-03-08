@@ -14,7 +14,6 @@ export const metadata = {
 export default function Investing() {
   const description =
   ""  
-
   return (
     <Base
       title="Investing // Zak Gilliam"

@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function Index() {
   const title = 'Zak Gilliam';
-  const description = 'Obsessed with developer experience';
+  const description = '';
 
   return (
     <Wrapper>

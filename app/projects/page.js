@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function Projects() {
   const renderFeatured = () => {
-    const featured = ['CEREBRA', 'NONE'];
+    const featured = ['CEREBRA', 'BOOST Accelerometer Pipeline', 'CA Pipeline'];
 
     return items
       .map((item) => {
@@ -64,7 +64,7 @@ export default function Projects() {
     return total;
   };
 
-  const description = `I have a passion for building tools for researchers and users more broadly. Here you can navigate to <strong>${getTotalProjects()} different websites, apps, and libraries</strong> I built.`;
+  const description = `I have a passion for building tools for researchers and users more broadly. Here you can navigate to <strong>${getTotalProjects()} different websites, tools, and libraries</strong> I built.`;
 
   return (
     <Base

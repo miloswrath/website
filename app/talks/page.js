@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function Talks() {
   const renderFeatured = () => {
-    const featured = ['Computational Neuroscience Symposium 2025'];
+    const featured = ['Computational Psychiatry Symposium 2025'];
 
     return items
       .map((item) => {

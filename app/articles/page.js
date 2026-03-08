@@ -28,7 +28,9 @@ export default async function Articles() {
   ];
 
   const featuredPosts = [
-    getPostBySlug('article-1', featuredParams),
+    getPostBySlug('NixOS', featuredParams),
+    getPostBySlug('AI_non-tech', featuredParams),
+    getPostBySlug('research_to_real', featuredParams),
   ];
 
   const description = `Here you can find all the <strong>${allPosts.length} articles</strong> I wrote.`;

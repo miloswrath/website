@@ -6,12 +6,11 @@ export const metadata = {
   description:
     "I often get messages asking about specific pieces of software or hardware I use. This not a static page, it's a living document with everything that I'm using nowadays.",
   openGraph: {
-    title: 'Uses // Zeno Rocha',
-    url: 'https://zenorocha.com/uses',
+    title: 'Uses // Zak Gilliam',
+    url: 'https://zakgilliam.com/uses',
     images: ['/static/images/uses-bw.jpg']
   }
 };
-
 export default function Uses() {
   const renderAll = () => {
     return categories.map((category) => {
@@ -40,7 +39,7 @@ export default function Uses() {
 
   return (
     <Base
-      title="Uses // Zeno Rocha"
+      title="Uses // Zak Gilliam"
       tagline="Tools. Apps. Gear."
       primaryColor="yellow"
       secondaryColor="pink"

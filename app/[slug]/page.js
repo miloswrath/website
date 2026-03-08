@@ -7,10 +7,14 @@ import { getPostBySlug, getPostSlugs } from '../../lib/blog';
 
 export async function generateStaticParams() {
   const slugs = getPostSlugs();
-  return slugs.map((slug) => ({
-    slug
-  }));
+  return [...new Set(slugs)]
+    .filter((slug) => typeof slug === 'string' && slug && slug !== 'undefined')
+    .map((slug) => ({
+      slug
+    }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;

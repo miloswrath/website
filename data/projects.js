@@ -8,6 +8,21 @@ const items = [
         active: true,
         icon: 'koala',
         stats: '200+ users'
+      },
+      {
+        title: 'BOOST Accelerometer Pipeline',
+        description: 'A pipeline for processing accelerometer data.',
+        active: true,
+        icon: 'charm',
+        stats: '100+ users'
+
+      },
+      {
+        title: 'CA Pipeline',
+        description: 'A pipeline for processing and analyzing cognitive assessment data.',
+        active: true,
+        icon: 'source',
+        stats: '100+ users'
       }
     ]
   },
