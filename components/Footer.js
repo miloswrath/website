@@ -3,7 +3,7 @@ import Link from 'next/link';
 const FOOTER_LINKS = [
   {
     title: 'Twitter',
-    url: 'https://twitter.com/miloswrath',
+    url: 'https://x.com/HankHil70702293',
     icon: 'ri-twitter-line'
   },
   {
@@ -13,12 +13,12 @@ const FOOTER_LINKS = [
   },
   {
     title: 'LinkedIn',
-    url: 'https://linkedin.com/in/miloswrath',
+    url: 'https://www.linkedin.com/in/zachary-gilliam-1aa18720b',
     icon: 'ri-linkedin-line'
   },
   {
     title: 'Instagram',
-    url: 'https://instagram.com/zak_gilliam',
+    url: 'https://instagram.com/zak.gilliam',
     icon: 'ri-instagram-line'
   }
 ];

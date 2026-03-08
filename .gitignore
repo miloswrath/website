@@ -4,3 +4,4 @@ auth.json
 node_modules
 .env*.local
 .direnv/
+out/

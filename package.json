@@ -1,9 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "name": "zenorocha.com",
-  "version": "5.0.0",
-  "license": "MIT",
+  "name": "zaksweb",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

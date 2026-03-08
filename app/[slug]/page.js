@@ -121,5 +121,3 @@ export default async function Post({ params }) {
     </>
   );
 }
-
-export const revalidate = 60;
