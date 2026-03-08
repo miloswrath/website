@@ -3,10 +3,8 @@ import '../public/static/css/prism.css';
 import './globals.css';
 
 import localFont from 'next/font/local';
-import Script from 'next/script';
 
 import CommandBar from '../components/CommandBar';
-import { GA_TRACKING_ID } from '../lib/gtag';
 import Template from './template';
 
 const biotif = localFont({
@@ -85,18 +83,6 @@ export default function RootLayout({ children }) {
       className={`${biotif.variable} ${neuzeitGroteskBold.variable} ${firaCode.variable} bg-background text-secondary touch-manipulation overscroll-contain font-sans antialiased`}
     >
       <body suppressHydrationWarning>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}');
-          `}
-        </Script>
         <Template>
           <CommandBar>{children}</CommandBar>
         </Template>
