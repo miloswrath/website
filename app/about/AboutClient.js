@@ -47,9 +47,9 @@ export default function AboutClient({ description }) {
             technology to improve people&apos;s lives.
           </p>
           <p className="md:my-3.75">
-            <strong>I love dark mode</strong>, open source, and using technology
-            to make a difference. When I&apos;m not working, I like gaming,
-            watching movies, and <strong>playing guitar</strong>
+            <strong>I love listening to and making music</strong>, working on
+            side projects, and open-source software. When I&apos;m not working,
+            I like gaming, watching movies, and <strong>playing guitar</strong>
           </p>
         </div>
       </div>

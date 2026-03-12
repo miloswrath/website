@@ -34,7 +34,7 @@ export default function Base({
         }
       `}</style>
       <PostMain className="base-post-main">
-        <PostContent>
+        <PostContent className="w-full">
           <PostContainer>
             <h1
               className="bg-size-[100%] bg-clip-text [-moz-background-clip:text] [-moz-text-fill-color:transparent] [-webkit-background-clip:text] [-webkit-box-decoration-break:clone] [-webkit-text-fill-color:transparent]"

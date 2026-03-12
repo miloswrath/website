@@ -4,7 +4,7 @@ import Base from '../../layouts/Base';
 export const metadata = {
   title: 'Uses',
   description:
-    "I often get messages asking about specific pieces of software or hardware I use. This not a static page, it's a living document with everything that I'm using nowadays.",
+    "I've spent a little too much time and money on perfecting my setup. As of right now, I can't find anything else to spend my money on so this is it. Here you can find all the software, hardware, and gear that I use on a daily basis.",
   openGraph: {
     title: 'Uses // Zak Gilliam',
     url: 'https://zakgilliam.com/uses',
@@ -47,7 +47,7 @@ export default function Uses() {
       <p
         dangerouslySetInnerHTML={{
           __html:
-            "I often get messages asking about specific pieces of <strong>software or hardware I use</strong>. This not a static page, it's a <strong>living document</strong> with everything that I'm using nowadays."
+            "I've spent a little too much time and money on perfecting my setup. As of right now, I can't find anything else to spend my money on so this is it. Here you can find all the software, hardware, and gear that I use on a daily basis."
         }}
       />
 

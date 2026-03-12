@@ -8,7 +8,7 @@ import Base from '../../layouts/Base';
 export const metadata = {
   title: 'Talks',
   description:
-    'I don\'t just write code, I also share knowledge. Here you can find all the talks I gave in conferences, meetups, and events around the world.',
+    "I don't just write code, I also share knowledge. Here you can find all the talks I gave in conferences, meetups, and events around the world.",
   openGraph: {
     title: 'Talks // Zak Gilliam',
     url: 'https://zakgilliam.com/talks',
@@ -110,11 +110,6 @@ function TalkItem(props) {
               <a href={presentation.url} target="_blank">
                 {presentation.title}
               </a>{' '}
-              {presentation.video && (
-                <a href={presentation.video} target="_blank">
-                  (Video)
-                </a>
-              )}
             </li>
           );
         })}
