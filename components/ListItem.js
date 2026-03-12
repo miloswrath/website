@@ -29,7 +29,7 @@ export default function ListItem(props) {
     );
   }
 
-  // Podcasts
+  // Music / external links
   return (
     <li className="border-hover relative border-b last:border-0">
       <a href={props.href} target="_blank" className="hover:opacity-100">

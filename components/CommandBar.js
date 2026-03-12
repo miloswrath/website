@@ -18,7 +18,7 @@ import aboutIcon from '../public/static/icons/about.json';
 import articlesIcon from '../public/static/icons/articles.json';
 import copyLinkIcon from '../public/static/icons/copy-link.json';
 import homeIcon from '../public/static/icons/home.json';
-import podcastsIcon from '../public/static/icons/podcasts.json';
+import musicIcon from '../public/static/icons/music.json';
 import projectsIcon from '../public/static/icons/projects.json';
 import reminderIcon from '../public/static/icons/reminder.json';
 import sourceIcon from '../public/static/icons/source.json';
@@ -52,7 +52,7 @@ export default function CommandBar(props) {
     articles: ['g', 'b'],
     projects: ['g', 'p'],
     talks: ['g', 't'],
-    podcasts: ['g', 'c'],
+    music: ['g', 'c'],
     uses: ['g', 'u'],
     reminder: ['g', 'r']
   };
@@ -154,17 +154,17 @@ export default function CommandBar(props) {
         iconId: 'talks'
       },
       {
-        id: 'podcasts',
-        name: 'Podcasts',
-        shortcut: shortcutCombos.podcasts,
-        keywords: 'go-podcasts',
+        id: 'music',
+        name: 'Music',
+        shortcut: shortcutCombos.music,
+        keywords: 'go-music',
         section: 'Go To',
-        iconData: podcastsIcon,
+        iconData: musicIcon,
         perform: () => {
-          router.push('/podcasts');
+          router.push('/music');
           setOpen(false);
         },
-        iconId: 'podcasts'
+        iconId: 'music'
       },
       {
         id: 'uses',
@@ -222,9 +222,7 @@ export default function CommandBar(props) {
     actionsById.projects.perform()
   );
   useHotkeys(shortcutCombos.talks.join('>'), () => actionsById.talks.perform());
-  useHotkeys(shortcutCombos.podcasts.join('>'), () =>
-    actionsById.podcasts.perform()
-  );
+  useHotkeys(shortcutCombos.music.join('>'), () => actionsById.music.perform());
   useHotkeys(shortcutCombos.uses.join('>'), () => actionsById.uses.perform());
   useHotkeys(shortcutCombos.reminder.join('>'), () =>
     actionsById.reminder.perform()

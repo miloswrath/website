@@ -95,6 +95,7 @@ It is the authoritative reference for all feature development, code review, and
 agent-driven implementation.
 
 **Amendment procedure**:
+
 1. Propose the amendment in writing, citing which principle or section is affected.
 2. Receive explicit owner approval before implementing changes that contradict this
    constitution.
@@ -102,6 +103,7 @@ agent-driven implementation.
 4. Propagate changes to all dependent templates and documents.
 
 **Versioning policy**:
+
 - MAJOR: Removal or backward-incompatible redefinition of an existing principle.
 - MINOR: Addition of a new principle or section with material new constraints.
 - PATCH: Clarifications, wording improvements, or non-semantic refinements.

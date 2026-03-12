@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 
 export const HoverAnimation = ({
@@ -19,14 +19,19 @@ export const HoverAnimation = ({
       onHoverEnd={() => setIsHovered(false)}
       className={className}
     >
-      {isHovered && (
-        <motion.span
-          key="hover-background"
-          layoutId={layoutId}
-          animate={{ opacity: 1 }}
-          className={`bg-hover absolute -z-1 rounded-lg ${backgroundClassName}`}
-        />
-      )}
+      <AnimatePresence>
+        {isHovered && (
+          <motion.span
+            key="hover-background"
+            layoutId={layoutId}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className={`bg-hover absolute -z-1 rounded-lg ${backgroundClassName}`}
+          />
+        )}
+      </AnimatePresence>
       {children}
     </motion.span>
   );

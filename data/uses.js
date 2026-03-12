@@ -6,13 +6,13 @@ const categories = [
         title: 'Desktop',
         description:
           'I have a custom-built desktop with an AMD Ryzen 9 5950X processor, 64GB of RAM. For graphics, I have an NVIDIA GeForce RTX 5080 and two AMD Radeon RX 7900 XTs, AMD for linux and NVIDIA for Windows gaming.',
-        url: 'https://pcpartpicker.com/list/8Zs9Zz'
+        url: 'https://pcpartpicker.com/b/zD78TW'
       },
       {
         title: 'Framework Laptop 13" (2025)',
         description:
           'Framework is the company that makes the most modular and repairable laptop. I have the 13" model with an Intel Ultra processor.',
-        url: 'https://framework.com/laptops/13'
+        url: 'https://frame.work/laptop13'
       },
       {
         title: 'ROG Strix XG27ACD',
@@ -27,7 +27,7 @@ const categories = [
       {
         title: 'Custom Built Lily 58',
         description: 'The single most beautiful keyboard I ever made.',
-        url: 'https://nope.com'
+        url: 'https://github.com/kata0510/Lily58'
       }
     ]
   },

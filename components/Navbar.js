@@ -13,7 +13,7 @@ export default function Navbar() {
     'Articles',
     'Projects',
     'Talks',
-    'Podcasts',
+    'Music',
     'Uses',
     'Reminder'
   ];
