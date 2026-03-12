@@ -1,5 +1,5 @@
-import { ArticleJsonLd } from 'next-seo';
 import { notFound } from 'next/navigation';
+import { ArticleJsonLd } from 'next-seo';
 
 import { CustomMDX } from '../../components/shared/mdx';
 import Blogpost from '../../layouts/Blogpost';
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
           }
         : undefined
     };
-  } catch (error) {
+  } catch {
     return {
       title: 'Not Found'
     };
@@ -92,7 +92,7 @@ export default async function Post({ params }) {
       'slug',
       'title'
     ]);
-  } catch (error) {
+  } catch {
     notFound();
   }
 

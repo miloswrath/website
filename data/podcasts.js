@@ -1,10 +1,7 @@
-const bytetalk = [
-];
+const bytetalk = [];
 
-const appearances = [
-];
+const appearances = [];
 
-const zofe = [
-];
+const zofe = [];
 
 export { appearances, bytetalk, zofe };

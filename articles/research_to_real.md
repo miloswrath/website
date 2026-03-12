@@ -3,8 +3,11 @@ title: 'From Research Code to Real Systems'
 description: 'Turning academic code into reliable software'
 date: '2026-03-08'
 ---
+
 # From Research Code to Real Systems
+
 ---
+
 There’s a big difference between code written for a single analysis and code that multiple people depend on every day. In research environments, a lot of scripts start as quick experiments—but eventually they become critical infrastructure.
 
 When that happens, the priorities change. Instead of just getting results once, the system needs to be reliable, reproducible, and maintainable. That means adding things like automated data validation, clear pipelines, versioned environments, and documentation so others can actually use the tools.

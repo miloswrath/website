@@ -1,4 +1,3 @@
-const investments = [
-];
+const investments = [];
 
 export default investments;

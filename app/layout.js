@@ -62,7 +62,7 @@ export const metadata = {
   authors: [{ name: 'Zak Gilliam' }],
   openGraph: {
     type: 'website',
-    siteName: 'Zak Gilliam',
+    siteName: 'Zak Gilliam'
   },
   twitter: {
     card: 'summary_large_image'

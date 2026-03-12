@@ -5,7 +5,7 @@ const categories = [
       {
         title: 'Desktop',
         description:
-          "I have a custom-built desktop with an AMD Ryzen 9 5950X processor, 64GB of RAM. For graphics, I have an NVIDIA GeForce RTX 5080 and two AMD Radeon RX 7900 XTs, AMD for linux and NVIDIA for Windows gaming.",
+          'I have a custom-built desktop with an AMD Ryzen 9 5950X processor, 64GB of RAM. For graphics, I have an NVIDIA GeForce RTX 5080 and two AMD Radeon RX 7900 XTs, AMD for linux and NVIDIA for Windows gaming.',
         url: 'https://pcpartpicker.com/list/8Zs9Zz'
       },
       {
@@ -18,7 +18,7 @@ const categories = [
         title: 'ROG Strix XG27ACD',
         description: 'A beautiful 2K monitor with a 360Hz refresh rate.',
         url: 'https://www.amazon.com/ASUS-Strix-Gaming-Monitor-XG27ACDNG/dp/B0D7NSZRJW'
-      },
+      }
     ]
   },
   {
@@ -28,7 +28,7 @@ const categories = [
         title: 'Custom Built Lily 58',
         description: 'The single most beautiful keyboard I ever made.',
         url: 'https://nope.com'
-      },
+      }
     ]
   },
   {
@@ -51,7 +51,7 @@ const categories = [
         description:
           'The best color scheme for coding. I use it everywhere, from my terminal to my code editor - even my entire desktop using Hyprland!.',
         url: 'https://catppuccin.com'
-      },
+      }
     ]
   },
   {
@@ -60,9 +60,9 @@ const categories = [
       {
         title: 'Kitty',
         description:
-          "Easy, Fast, and with a great set of features. I use it as my main terminal on NixOS.",
+          'Easy, Fast, and with a great set of features. I use it as my main terminal on NixOS.',
         url: 'https://sw.kovidgoyal.net/kitty/'
-      },
+      }
     ]
   },
   {
@@ -88,7 +88,7 @@ const categories = [
       {
         title: 'Spotify',
         description:
-          'I have a cracked version of Spotify that I use to listen to music. I don\'t like ads and I don\'t want to pay for a subscription - sue me.',
+          "I have a cracked version of Spotify that I use to listen to music. I don't like ads and I don't want to pay for a subscription - sue me.",
         url: 'https://spotify.com'
       }
     ]
@@ -98,10 +98,9 @@ const categories = [
     items: [
       {
         title: 'Proton',
-        description:
-          'The entire proton suite is a must',
+        description: 'The entire proton suite is a must',
         url: 'https://www.proton.me'
-      },
+      }
     ]
   },
   {
@@ -114,7 +113,7 @@ const categories = [
         url: 'https://www.apple.com/airpods-pro/'
       }
     ]
-  },
+  }
 ];
 
 export default categories;

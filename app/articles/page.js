@@ -6,8 +6,7 @@ import { getAllPosts, getPostBySlug } from '../../lib/blog';
 
 export const metadata = {
   title: 'Articles',
-  description:
-    'Here you can find all the articles I wrote. ',
+  description: 'Here you can find all the articles I wrote. ',
   openGraph: {
     title: 'Articles // Zak Gilliam',
     url: 'https://zakgilliam.com/articles',
@@ -30,7 +29,7 @@ export default async function Articles() {
   const featuredPosts = [
     getPostBySlug('NixOS', featuredParams),
     getPostBySlug('AI_non-tech', featuredParams),
-    getPostBySlug('research_to_real', featuredParams),
+    getPostBySlug('research_to_real', featuredParams)
   ];
 
   const description = `Here you can find all the <strong>${allPosts.length} articles</strong> I wrote.`;

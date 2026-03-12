@@ -4,7 +4,7 @@ const items = [
     company: 'HBC Lab',
     companyUrl: 'https://hbclab.psychology.uiowa.edu',
     startDate: '2024-08-01',
-    location: 'University of Iowa',
+    location: 'University of Iowa'
   },
   {
     jobTitle: 'Project Lead - CEREBRA',
@@ -12,7 +12,7 @@ const items = [
     companyUrl: 'https://healthcare.uiowa.edu',
     startDate: '2024-10-01',
     endDate: '2025-08-01',
-    location: 'University of Iowa',
+    location: 'University of Iowa'
   },
   {
     jobTitle: 'Contract Software Engineer',
@@ -20,7 +20,7 @@ const items = [
     companyUrl: 'https://jdsc.lab.uiowa.edu',
     startDate: '2025-08-01',
     endDate: '2025-12-01',
-    location: 'University of Iowa',
+    location: 'University of Iowa'
   },
   {
     jobTitle: 'Intern Developer // Process Automation',
@@ -28,7 +28,7 @@ const items = [
     companyUrl: '',
     startDate: '2023-05-01',
     endDate: '2024-08-01',
-    location: 'Hybrid (Remote & Sarasota, FL)',
+    location: 'Hybrid (Remote & Sarasota, FL)'
   }
-]
+];
 export default items;

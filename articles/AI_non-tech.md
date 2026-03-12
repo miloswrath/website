@@ -1,10 +1,13 @@
 ---
 title: 'Using AI to Make Non-Technical Teams More Productive'
-description: "Building AI tools that help teams work faster."
+description: 'Building AI tools that help teams work faster.'
 date: '2026-02-08'
 ---
+
 # Using AI to Make Non-Technical Teams More Productive
+
 ---
+
 A lot of the systems I build aren’t meant for developers—they’re meant for researchers, analysts, and people who don’t necessarily write code. That changes how you design tools. The goal isn’t to expose more complexity; it’s to remove it.
 
 One approach I’ve found useful is building AI-assisted tools that sit on top of existing workflows. Instead of asking someone to learn a new programming language or analytics stack, AI can help translate questions into actions—summarizing datasets, generating reports, or helping people explore results.

@@ -2,8 +2,7 @@ import Base from '../../layouts/Base';
 
 export const metadata = {
   title: 'Investing',
-  description:
-  "",
+  description: '',
   openGraph: {
     title: 'Investing // Zak Gilliam',
     url: 'https://zakgilliam.com/investing',
@@ -12,8 +11,6 @@ export const metadata = {
 };
 
 export default function Investing() {
-  const description =
-  ""  
   return (
     <Base
       title="Investing // Zak Gilliam"
@@ -21,7 +18,9 @@ export default function Investing() {
       primaryColor="purple"
       secondaryColor="cyan"
     >
-      <p>Nothing here <strong>yet</strong>...</p>
+      <p>
+        Nothing here <strong>yet</strong>...
+      </p>
     </Base>
   );
 }

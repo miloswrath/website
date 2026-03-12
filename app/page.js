@@ -26,9 +26,7 @@ export default function Index() {
         <PostContent className="mb-5 p-0!">
           <div className="mx-5 mt-64 flex w-full max-w-190 flex-col items-start">
             <h1>{title}</h1>
-            <p className="mt-0">
-              {description}
-            </p>
+            <p className="mt-0">{description}</p>
             <ShortcutHome />
           </div>
         </PostContent>

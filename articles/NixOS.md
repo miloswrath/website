@@ -1,10 +1,12 @@
 ---
 title: 'Why I Use NixOS'
-description: "Predictable and easy to manage - NixOS."
-image: "/static/img/blog/nix.webp"
+description: 'Predictable and easy to manage - NixOS.'
+image: '/static/img/blog/nix.webp'
 date: '2026-02-08'
 ---
+
 # Why I Use Linux (and NixOS) for My Development Work
+
 I spend a lot of my time building things: data pipelines for research, small tools, web apps, and experiments with AI and automation. Over the years I’ve tried a lot of development environments, but the setup that consistently makes my work easier is Linux—specifically NixOS.
 
 The biggest reason is reproducibility. In many projects, especially research or collaborative development, the hardest part isn’t writing the code—it’s getting the environment to run the code. Different package versions, missing dependencies, or conflicting libraries can break things quickly. NixOS solves this by making the entire system and development environment declarative. Instead of manually installing tools and hoping everything works, I describe the environment in a configuration file, and Nix builds it exactly the same way every time.

@@ -15,17 +15,17 @@ const items = [
         active: true,
         icon: 'charm',
         stats: '100+ users'
-
       },
       {
         title: 'CA Pipeline',
-        description: 'A pipeline for processing and analyzing cognitive assessment data.',
+        description:
+          'A pipeline for processing and analyzing cognitive assessment data.',
         active: true,
         icon: 'source',
         stats: '100+ users'
       }
     ]
-  },
+  }
 ];
 
 export default items;
