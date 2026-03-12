@@ -18,7 +18,6 @@ import aboutIcon from '../public/static/icons/about.json';
 import articlesIcon from '../public/static/icons/articles.json';
 import copyLinkIcon from '../public/static/icons/copy-link.json';
 import homeIcon from '../public/static/icons/home.json';
-import investingIcon from '../public/static/icons/investing.json';
 import podcastsIcon from '../public/static/icons/podcasts.json';
 import projectsIcon from '../public/static/icons/projects.json';
 import reminderIcon from '../public/static/icons/reminder.json';
@@ -54,7 +53,6 @@ export default function CommandBar(props) {
     projects: ['g', 'p'],
     talks: ['g', 't'],
     podcasts: ['g', 'c'],
-    investing: ['g', 'i'],
     uses: ['g', 'u'],
     reminder: ['g', 'r']
   };
@@ -169,19 +167,6 @@ export default function CommandBar(props) {
         iconId: 'podcasts'
       },
       {
-        id: 'investing',
-        name: 'Investing',
-        shortcut: shortcutCombos.investing,
-        keywords: 'go-investing',
-        section: 'Go To',
-        iconData: investingIcon,
-        perform: () => {
-          router.push('/investing');
-          setOpen(false);
-        },
-        iconId: 'investing'
-      },
-      {
         id: 'uses',
         name: 'Uses',
         shortcut: shortcutCombos.uses,
@@ -239,9 +224,6 @@ export default function CommandBar(props) {
   useHotkeys(shortcutCombos.talks.join('>'), () => actionsById.talks.perform());
   useHotkeys(shortcutCombos.podcasts.join('>'), () =>
     actionsById.podcasts.perform()
-  );
-  useHotkeys(shortcutCombos.investing.join('>'), () =>
-    actionsById.investing.perform()
   );
   useHotkeys(shortcutCombos.uses.join('>'), () => actionsById.uses.perform());
   useHotkeys(shortcutCombos.reminder.join('>'), () =>
