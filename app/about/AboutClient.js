@@ -24,7 +24,7 @@ export default function AboutClient({ description }) {
         <div className="mt-0 w-auto md:w-84">
           <Image
             alt="Zak Gilliam"
-            src="/static/images/avatar.jpg"
+            src="/static/images/avatar.png"
             width="336"
             height="336"
             placeholder="blur"
