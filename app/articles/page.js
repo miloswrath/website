@@ -28,7 +28,7 @@ export default async function Articles() {
 
   const featuredPosts = [
     getPostBySlug('NixOS', featuredParams),
-    getPostBySlug('AI_non-tech', featuredParams),
+    getPostBySlug('specify', featuredParams),
     getPostBySlug('research_to_real', featuredParams)
   ];
 

@@ -1,6 +1,7 @@
 ---
 title: 'From Research Code to Real Systems'
 description: 'Turning academic code into reliable software'
+image: 'https://imgs.search.brave.com/x3l6bGhFPrsHAD64T0vHBqmBAgCcteYNO1BpvtNS9gc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWQu/c3RhbmZvcmQuZWR1/L25ldXJvaW1hZ2lu/Zy9famNyX2NvbnRl/bnQvaGVyby9oZXJv/X2Jhbm5lci9pbWFn/ZXMvaW1hZ2VTbGlk/ZTUuaW1nLjYyMC5o/aWdoLnBuZy9DQUZO/LnBuZw'
 date: '2026-03-08'
 ---
 

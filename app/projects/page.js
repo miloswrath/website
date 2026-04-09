@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function Projects() {
   const renderFeatured = () => {
-    const featured = ['CEREBRA', 'BOOST Accelerometer Pipeline', 'CA Pipeline'];
+    const featured = ['CEREBRA', 'BOOST Accelerometer Pipeline', 'CA Pipeline', 'Reporting Pipeline'];
 
     return items
       .map((item) => {

@@ -23,6 +23,14 @@ const items = [
         active: true,
         icon: 'source',
         stats: '100+ users'
+      },
+      {
+        title: 'Reporting Pipeline',
+        description:
+          'Automated reporting service for study data AI-enabled personalization',
+        active: true,
+        icon: 'download',
+        stats: '150+ users'
       }
     ]
   }
