@@ -86,8 +86,7 @@ export default function AboutClient({ description }) {
           <span className="mt-0 mr-5 mb-0 ml-2.5">•</span>
           <ButtonPrimary
             as="a"
-            download
-            role="button"
+            download="zak-gilliam-headshot.jpg"
             href="/static/images/avatar.jpg"
             className="inline-flex items-center justify-center"
             onClick={downloadHeadshot}
