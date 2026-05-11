@@ -14,8 +14,7 @@ export default function Navbar() {
     'Projects',
     'Talks',
     'Music',
-    'Uses',
-    'Reminder'
+    'Uses'
   ];
   const { toggle } = useCommandBar();
 
