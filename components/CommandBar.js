@@ -20,7 +20,6 @@ import copyLinkIcon from '../public/static/icons/copy-link.json';
 import homeIcon from '../public/static/icons/home.json';
 import musicIcon from '../public/static/icons/music.json';
 import projectsIcon from '../public/static/icons/projects.json';
-import reminderIcon from '../public/static/icons/reminder.json';
 import sourceIcon from '../public/static/icons/source.json';
 import talksIcon from '../public/static/icons/talks.json';
 import usesIcon from '../public/static/icons/uses.json';
@@ -53,8 +52,7 @@ export default function CommandBar(props) {
     projects: ['g', 'p'],
     talks: ['g', 't'],
     music: ['g', 'c'],
-    uses: ['g', 'u'],
-    reminder: ['g', 'r']
+    uses: ['g', 'u']
   };
 
   const actionsBySection = {
@@ -178,19 +176,6 @@ export default function CommandBar(props) {
           setOpen(false);
         },
         iconId: 'uses'
-      },
-      {
-        id: 'reminder',
-        name: 'Reminder',
-        shortcut: shortcutCombos.reminder,
-        keywords: 'go-reminder',
-        section: 'Go To',
-        iconData: reminderIcon,
-        perform: () => {
-          router.push('/reminder');
-          setOpen(false);
-        },
-        iconId: 'reminder'
       }
     ]
   };
@@ -224,9 +209,6 @@ export default function CommandBar(props) {
   useHotkeys(shortcutCombos.talks.join('>'), () => actionsById.talks.perform());
   useHotkeys(shortcutCombos.music.join('>'), () => actionsById.music.perform());
   useHotkeys(shortcutCombos.uses.join('>'), () => actionsById.uses.perform());
-  useHotkeys(shortcutCombos.reminder.join('>'), () =>
-    actionsById.reminder.perform()
-  );
 
   return (
     <CommandBarContext.Provider
