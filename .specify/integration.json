@@ -1,9 +1,7 @@
 {
   "version": "0.8.8.dev0",
   "integration_state_schema": 1,
-  "installed_integrations": [
-    "pi"
-  ],
+  "installed_integrations": ["pi"],
   "integration_settings": {
     "pi": {
       "script": "sh",
