@@ -18,6 +18,7 @@ description: 'Task list for Resume Toast feature implementation'
 ## Path Conventions
 
 Single Next.js App Router project at repository root:
+
 - Pages: `app/`
 - Components: `components/`
 - Layouts: `layouts/`
@@ -29,7 +30,7 @@ Single Next.js App Router project at repository root:
 
 **Purpose**: Install the one new dependency required for the PDF viewer and confirm the static PDF asset is in place.
 
-- [ ] T001 Install `@syncfusion/ej2-pdfviewer` via `pnpm add @syncfusion/ej2-pdfviewer` and confirm `public/static/resume/resume.pdf` is present
+- [x] T001 Install `@syncfusion/ej2-pdfviewer` via `pnpm add @syncfusion/ej2-pdfviewer` and confirm `public/static/resume/resume.pdf` is present
 
 **Checkpoint**: Dependency installed, PDF asset confirmed — user story work can begin.
 
@@ -43,10 +44,10 @@ Single Next.js App Router project at repository root:
 
 ### Implementation for User Story 1
 
-- [ ] T002 [US1] Create `components/ResumeToast.js` as a `'use client'` component with a rectangular Radix Toast-based expanded state rendered in the bottom-right viewport corner
-- [ ] T003 [US1] Add sessionStorage check in `components/ResumeToast.js` so the expanded prompt is shown only once per browser session (`hasExpandedThisSession` flag)
-- [ ] T004 [US1] Add accessible name, keyboard focusability, and click handler that navigates to `/resume` on the expanded prompt in `components/ResumeToast.js`
-- [ ] T005 [US1] Mount `<ResumeToast />` inside the root shell in `app/layout.js` so it appears globally on all non-resume pages
+- [x] T002 [US1] Create `components/ResumeToast.js` as a `'use client'` component with a rectangular Radix Toast-based expanded state rendered in the bottom-right viewport corner
+- [x] T003 [US1] Add sessionStorage check in `components/ResumeToast.js` so the expanded prompt is shown only once per browser session (`hasExpandedThisSession` flag)
+- [x] T004 [US1] Add accessible name, keyboard focusability, and click handler that navigates to `/resume` on the expanded prompt in `components/ResumeToast.js`
+- [x] T005 [US1] Mount `<ResumeToast />` inside the root shell in `app/layout.js` so it appears globally on all non-resume pages
 - [ ] T006 [US1] Verify bottom-right placement does not overlap the navbar or primary page content on desktop and small-screen viewports (manual check, adjust Tailwind classes in `components/ResumeToast.js` as needed)
 
 **Checkpoint**: User Story 1 fully functional — new session shows prompt, click reaches `/resume`.
@@ -61,11 +62,11 @@ Single Next.js App Router project at repository root:
 
 ### Implementation for User Story 3
 
-- [ ] T007 [P] [US3] Create `app/resume/page.js` as a server component with Next.js metadata, Base layout, a page title matching the existing titled page style (e.g., `"Resume // Zak Gilliam"`), and a visible last-updated note
-- [ ] T008 [P] [US3] Create `app/resume/ResumeClient.js` as a `'use client'` component that dynamically imports the Syncfusion PdfViewerComponent and loads `/static/resume/resume.pdf`
-- [ ] T009 [US3] Implement `loading` and `ready` viewer states in `app/resume/ResumeClient.js` (spinner or skeleton while the viewer initializes, then the rendered document)
-- [ ] T010 [US3] Implement `fallback` state in `app/resume/ResumeClient.js` — show a friendly message and a direct `<a href="/static/resume/resume.pdf">` link when the viewer or document errors; ensure fallback appears within 2 seconds of the failed state
-- [ ] T011 [US3] Add `aria-label` accessible region label to the PDF viewing area in `app/resume/ResumeClient.js`
+- [x] T007 [P] [US3] Create `app/resume/page.js` as a server component with Next.js metadata, Base layout, a page title matching the existing titled page style (e.g., `"Resume // Zak Gilliam"`), and a visible last-updated note
+- [x] T008 [P] [US3] Create `app/resume/ResumeClient.js` as a `'use client'` component that dynamically imports the Syncfusion PdfViewerComponent and loads `/static/resume/resume.pdf`
+- [x] T009 [US3] Implement `loading` and `ready` viewer states in `app/resume/ResumeClient.js` (spinner or skeleton while the viewer initializes, then the rendered document)
+- [x] T010 [US3] Implement `fallback` state in `app/resume/ResumeClient.js` — show a friendly message and a direct `<a href="/static/resume/resume.pdf">` link when the viewer or document errors; ensure fallback appears within 2 seconds of the failed state
+- [x] T011 [US3] Add `aria-label` accessible region label to the PDF viewing area in `app/resume/ResumeClient.js`
 
 **Checkpoint**: User Story 3 fully functional — `/resume` loads independently, displays viewer, shows fallback on error.
 
@@ -79,11 +80,11 @@ Single Next.js App Router project at repository root:
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Add collapse timer logic (≤10 seconds, matching `collapseDelaySeconds` from data-model.md) in `components/ResumeToast.js` using `setTimeout` that transitions `state` from `expanded` to `collapsed`
-- [ ] T013 [US2] Implement the collapsed circular state in `components/ResumeToast.js` using the site's favicon Z branding (reference existing Z icon asset in `public/static/icons/`) with a click handler navigating to `/resume`
-- [ ] T014 [US2] Add Framer Motion layout/opacity transition for the `expanded → collapsed` change in `components/ResumeToast.js`; use `useReducedMotion()` to disable non-essential animation when the visitor prefers reduced motion
-- [ ] T015 [US2] Add `aria-label="View Zak's resume"` (or equivalent) to the collapsed circular icon in `components/ResumeToast.js` so its accessible name is clear in both states
-- [ ] T016 [US2] Use `usePathname` from `next/navigation` in `components/ResumeToast.js` to set `state` to `hidden-on-resume-page` when the visitor is already on `/resume`
+- [x] T012 [US2] Add collapse timer logic (≤10 seconds, matching `collapseDelaySeconds` from data-model.md) in `components/ResumeToast.js` using `setTimeout` that transitions `state` from `expanded` to `collapsed`
+- [x] T013 [US2] Implement the collapsed circular state in `components/ResumeToast.js` using the site's favicon Z branding (reference existing Z icon asset in `public/static/icons/`) with a click handler navigating to `/resume`
+- [x] T014 [US2] Add Framer Motion layout/opacity transition for the `expanded → collapsed` change in `components/ResumeToast.js`; use `useReducedMotion()` to disable non-essential animation when the visitor prefers reduced motion
+- [x] T015 [US2] Add `aria-label="View Zak's resume"` (or equivalent) to the collapsed circular icon in `components/ResumeToast.js` so its accessible name is clear in both states
+- [x] T016 [US2] Use `usePathname` from `next/navigation` in `components/ResumeToast.js` to set `state` to `hidden-on-resume-page` when the visitor is already on `/resume`
 
 **Checkpoint**: User Story 2 fully functional — prompt collapses within 10 s, icon is clickable and accessible, prompt hides on `/resume`.
 
@@ -97,10 +98,10 @@ Single Next.js App Router project at repository root:
 
 ### Implementation for User Story 4
 
-- [ ] T017 [P] [US4] Add a safe `gtag` call for expanded prompt click (`resume_prompt_click`, `source: expanded_prompt`) in the click handler in `components/ResumeToast.js`
-- [ ] T018 [P] [US4] Add a safe `gtag` call for collapsed icon click (`resume_icon_click`, `source: collapsed_icon`) in the icon click handler in `components/ResumeToast.js`
-- [ ] T019 [P] [US4] Add a safe `gtag` call for resume page view (`resume_page_view`, `source: direct_route`) on component mount in `app/resume/ResumeClient.js`
-- [ ] T020 [US4] Wrap every `gtag` call across `components/ResumeToast.js` and `app/resume/ResumeClient.js` in `typeof window !== 'undefined' && typeof window.gtag === 'function'` guards so missing analytics never throws or alters the UI
+- [x] T017 [P] [US4] Add a safe `gtag` call for expanded prompt click (`resume_prompt_click`, `source: expanded_prompt`) in the click handler in `components/ResumeToast.js`
+- [x] T018 [P] [US4] Add a safe `gtag` call for collapsed icon click (`resume_icon_click`, `source: collapsed_icon`) in the icon click handler in `components/ResumeToast.js`
+- [x] T019 [P] [US4] Add a safe `gtag` call for resume page view (`resume_page_view`, `source: direct_route`) on component mount in `app/resume/ResumeClient.js`
+- [x] T020 [US4] Wrap every `gtag` call across `components/ResumeToast.js` and `app/resume/ResumeClient.js` in `typeof window !== 'undefined' && typeof window.gtag === 'function'` guards so missing analytics never throws or alters the UI
 
 **Checkpoint**: User Story 4 fully functional — events fire when analytics are present; zero impact on UX when they are absent.
 
@@ -110,8 +111,8 @@ Single Next.js App Router project at repository root:
 
 **Purpose**: Code quality validation, manual QA, and accessibility verification across all user stories.
 
-- [ ] T021 Run `pnpm lint` and resolve all ESLint and Prettier violations in newly created files
-- [ ] T022 Run `pnpm build` and confirm the static export completes without errors; confirm resume page is included in the output
+- [x] T021 Run `pnpm lint` and resolve all ESLint and Prettier violations in newly created files
+- [x] T022 Run `pnpm build` and confirm the static export completes without errors; confirm resume page is included in the output
 - [ ] T023 [P] Manual QA per quickstart.md — verify expanded prompt, collapse timer, both click paths, `/resume` page title, last-updated note, PDF viewer, and fallback message
 - [ ] T024 [P] Keyboard-only accessibility check — tab to expanded prompt → Enter navigates to `/resume`; tab to collapsed icon → Enter navigates; tab to viewer controls works without a mouse
 - [ ] T025 [P] Reduced-motion check — enable OS/browser `prefers-reduced-motion`; confirm toast still transitions to collapsed icon without non-essential animation

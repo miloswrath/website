@@ -23,7 +23,6 @@
 3. Open the site in a fresh browser session.
 
 4. Verify the resume prompt:
-
    - Expanded rectangular prompt appears in the bottom-right corner.
    - Prompt copy clearly invites visitors to view Zak's resume.
    - Prompt does not block primary navigation or important content.
@@ -32,13 +31,11 @@
    - Clicking the collapsed icon reaches `/resume`.
 
 5. Verify accessibility behavior:
-
    - Prompt and collapsed icon can be reached with keyboard navigation.
    - Each state has an understandable accessible name.
    - Reduced-motion preference removes non-essential animation while preserving state change.
 
 6. Verify the resume page:
-
    - `/resume` loads directly.
    - Page title clearly identifies Zak's resume and matches existing title styling.
    - Last-updated note is visible near the title.
@@ -46,7 +43,6 @@
    - If PDF rendering is blocked or fails, a friendly fallback and direct PDF access are shown.
 
 7. Verify analytics-safe behavior:
-
    - With analytics available, prompt clicks and resume page visits are recorded.
    - With analytics blocked or unavailable, navigation and viewing still work normally.
 
