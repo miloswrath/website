@@ -6,6 +6,7 @@ import localFont from 'next/font/local';
 import Script from 'next/script';
 
 import CommandBar from '../components/CommandBar';
+import ResumeToast from '../components/ResumeToast';
 import Template from './template';
 
 const biotif = localFont({
@@ -100,6 +101,7 @@ export default function RootLayout({ children }) {
         <Template>
           <CommandBar>{children}</CommandBar>
         </Template>
+        <ResumeToast />
       </body>
     </html>
   );

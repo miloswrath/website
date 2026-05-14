@@ -3,6 +3,7 @@
 Auto-generated from all feature plans. Last updated: 2026-03-12
 
 ## Active Technologies
+
 - JavaScript with React 19 and Next.js 16 + Next.js App Router, React, Tailwind CSS, Radix Toast, Framer Motion, Google Analytics gtag, @syncfusion/ej2-pdfviewer for resume viewing (007-resume-toast)
 - Static PDF asset in `public/static/resume/resume.pdf`; session-scoped browser state for toast visibility (007-resume-toast)
 
@@ -36,6 +37,7 @@ pnpm deploy # Deploy to Vercel production
 - pnpm as package manager; no new runtime deps without owner approval
 
 ## Recent Changes
+
 - 007-resume-toast: Added JavaScript with React 19 and Next.js 16 + Next.js App Router, React, Tailwind CSS, Radix Toast, Framer Motion, Google Analytics gtag, @syncfusion/ej2-pdfviewer for resume viewing
 
 - 004-music-playlists (revised): Card-based playlist browser — PlaylistBrowser.js replaces PlaylistSection.js; playlist data gains optional `image` field

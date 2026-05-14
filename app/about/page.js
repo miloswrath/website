@@ -3,10 +3,12 @@ import AboutClient from './AboutClient';
 
 export const metadata = {
   title: 'About',
-  description: 'Zak Gilliam is an AI Pioneer and developer based in Greenville, SC.',
+  description:
+    'Zak Gilliam is an AI Pioneer and developer based in Greenville, SC.',
   openGraph: {
     title: 'About // Zak Gilliam',
-    description: 'Zak Gilliam is an AI Pioneer at TD SYNNEX based in Greenville, SC.',
+    description:
+      'Zak Gilliam is an AI Pioneer at TD SYNNEX based in Greenville, SC.',
     url: 'https://zakgilliam.com/about',
     images: ['/static/images/about-bw.jpg']
   }
