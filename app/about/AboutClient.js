@@ -35,9 +35,9 @@ export default function AboutClient({ description }) {
         <div className="mt-0 w-auto md:w-[48%]">
           <p className="mt-4 md:my-3.75 md:-mt-1.5">
             <strong>Hey, I&apos;m Zak Gilliam. </strong>
-            I&apos;m currently the Lead Developer for Data Platform & AI Systems
-            at HBC Lab, University of Iowa. I have a passion for building tools
-            that empower researchers to leverage AI in their work.
+            I&apos;m currently an AI Pioneer at TD SYNNEX working on AI
+            Transfomration of their Cisco business. I have a passion for building tools
+            that empower non-technical users to leverage AI in their work.
           </p>
           <p className="md:my-3.75">
             I have a background in psychology and human-computer interaction,

@@ -1,5 +1,12 @@
 const items = [
   {
+    jobTitle: 'AI Pioneer - Cisco AI Transformation',
+    company: 'TD SYNNEX',
+    companyUrl: 'https://www.tdsynnex.com/na/us/',
+    startDate: '2026-05-18',
+    location: 'Greenville, SC'
+  },
+  {
     jobTitle: 'Lead Developer - Data Platform & AI Systems',
     company: 'HBC Lab',
     companyUrl: 'https://hbclab.psychology.uiowa.edu',
